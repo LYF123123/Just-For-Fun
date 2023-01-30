@@ -29,3 +29,10 @@ func GetPercentageRounds(percentage int) string {
 		return "[###########]  " + strconv.Itoa(percentage)+"%"
 	}
 }
+
+func GetPercentageRoundsSubstring(percentage int) string {
+	// symbols:="★★★★★★★★★★☆☆☆☆☆☆☆☆☆☆"
+	symbols:="##########          "
+	offset:=(100-percentage)/10
+	return symbols[offset:offset+(percentage/10)]
+}

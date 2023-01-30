@@ -8,3 +8,10 @@ func TestGetPercentageRounds(t *testing.T) {
 		t.Log(out)
 	}
 }
+
+func TestGetPercentageRoundsSubstring(t *testing.T) {
+	for i := 0; i <= 100;i++{
+		out:=GetPercentageRoundsSubstring(i)
+		t.Log(out)
+	}
+}
